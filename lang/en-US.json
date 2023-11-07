@@ -38,6 +38,39 @@
 							}
 						}
 					},
+					"log": {
+						"list-name": "log message",
+						"display-text": "Create a log message with {0}",
+						"description": "Create log message.",
+						"params": {
+							"message": {
+								"name": "Message", 
+								"desc": "Message as string"
+							}
+						}
+					},
+					"warn": {
+						"list-name": "log warn message",
+						"display-text": "Create a warn message with {0}",
+						"description": "Create warn message.",
+						"params": {
+							"message": {
+								"name": "Message", 
+								"desc": "Message as string"
+							}
+						}
+					},
+					"error": {
+						"list-name": "log error message",
+						"display-text": "Create a error message with {0}",
+						"description": "Create error message.",
+						"params": {
+							"message": {
+								"name": "Message", 
+								"desc": "Message as string"
+							}
+						}
+					},
 					"delete-Log": {
 						"list-name": "Delete Logscreen",
 						"display-text": "Delete Logscreen",

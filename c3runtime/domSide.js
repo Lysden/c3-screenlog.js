@@ -15,19 +15,34 @@
         ["init-log", e => this._OnInitLog(e)],
         ["destroy-log", e => this._OnDestroyLog(e)],
         ["clear-log", e => this._OnClearLog(e)],
+        ["log", e => this._OnLog(e)],
+        ["warn", e => this._OnWarn(e)],
+        ["error", e => this._OnError(e)],
       ]);
     }
   
     _OnInitLog(e) {
-      screenLog.init(e.json);
+      globalThis.screenLog.init(e.json);
+    }
+
+    _OnLog(e) {
+      globalThis.screenLog.log(e.string);
+    }
+
+    _OnWarn(e) {
+      globalThis.screenLog.warn(e.string);
+    }
+
+    _OnError(e) {
+      globalThis.screenLog.error(e.string);
     }
   
     _OnDestroyLog(e) {
-      screenLog.destroy();
+      globalThis.screenLog.destroy();
     }
 
     _OnClearLog(e) {
-      screenLog.clear();
+      globalThis.screenLog.clear();
     }
   };
 

@@ -26,9 +26,21 @@
     deleteLog() {
 			this.PostToDOM("destroy-log");
 		},
+
 		clearLog() {
 			this.PostToDOM("clear-log");
+		},
 
-		} 
+    log(string) {
+        this.PostToDOM("log", { "string": string.toString() });
+    },
+
+    warn(string) {
+        this.PostToDOM("warn", { "string": string.toString() });
+    },
+
+    error(string) {
+        this.PostToDOM("error", { "string": string.toString() });
+    },
   };
 }

@@ -14,6 +14,33 @@
 				]
 			},
 			{
+				"id": "log",
+				"scriptName": "log",
+				"highlight": false,
+				"params":
+				[
+					{"id": "message", "type": "string", "initialValue": "\"\""}
+				]
+			},
+			{
+				"id": "warn",
+				"scriptName": "warn",
+				"highlight": false,
+				"params":
+				[
+					{"id": "message", "type": "string", "initialValue": "\"\""}
+				]
+			},
+			{
+				"id": "error",
+				"scriptName": "error",
+				"highlight": false,
+				"params":
+				[
+					{"id": "message", "type": "string", "initialValue": "\"\""}
+				]
+			},
+			{
 				"id": "delete-Log",
 				"scriptName": "deleteLog",
 				"highlight": true
