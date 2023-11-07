@@ -1,0 +1,67 @@
+﻿{
+	"languageTag": "en-US",
+	"fileDescription": "Console Screenlog-Plugin.",
+	"text": {
+		"plugins": {
+			"lysdenart_screenlogjs": {
+				"name": "Console Screenlog",
+				"description": "Bring console.log, on the screen. (It's a port from https://github.com/chinchang/screenlog.js)",
+				"help-url": "https://github.com/chinchang/screenlog.js",
+				"properties": {
+
+				},
+				"aceCategories": {
+					"custom": "Custom"
+				},
+				"conditions": {
+					"is-large-number": {
+						"list-name": "Is large number",
+						"display-text": "[i]{0}[/i] is a large number",
+						"description": "Test if a number is greater than 100.",
+						"params": {
+							"number": {
+								"name": "Number",
+								"desc": "Number to test if greater than 100."
+							}
+						}
+					}
+				},
+				"actions": {
+					"init-log": {
+						"list-name": "Create Logscreen",
+						"display-text": "Create Logscreen with JSON {0}",
+						"description": "Create Logscreen.",
+						"params": {
+							"settings": {
+								"name": "Settings", 
+								"desc": "Settings as JSON: options - A map of additional options, logColor - Text color. Default is lightgreen., fontSize - Font size of logs. Default is 1em(Your browser's default). , bgColor - Background color of the log panel. Default is black. , releaseConsole - By default console.log is overridden to log on screen. You can avoid this behaviour by setting releaseConsole to true and instead use screenLog.log() API. Default is false."
+							}
+						}
+					},
+					"delete-Log": {
+						"list-name": "Delete Logscreen",
+						"display-text": "Delete Logscreen",
+						"description": "Delete Logscreen."
+					},
+					"clear-Log": {
+						"list-name": "Clear Logscreen",
+						"display-text": "Clear Logscreen",
+						"description": "Clear Logscreen."
+					}
+				},
+				"expressions": {
+					"double": {
+						"description": "Double a number.",
+						"translated-name": "Double",
+						"params": {
+							"number": {
+								"name": "Number",
+								"desc": "The number to double."
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,33 @@
+﻿{
+	"is-c3-addon": true,
+	"type": "plugin",
+	"name": "Screenlog.js",
+	"id": "LysdenArt_screenlogjs",
+	"version": "1.0.0.0",
+	"author": "LYSDEN.art",
+	"website": "https://lysden.art",
+	"documentation": "https://github.com/chinchang/screenlog.js",
+	"description": "Bring console.log, on the screen. (It's a version based on Massive Cube one. It's a port from https://github.com/chinchang/screenlog.js)",
+	"editor-scripts": [
+						"plugin.js",
+						"type.js",
+						"instance.js"
+					],
+	"file-list": [
+		"c3runtime/plugin.js",
+		"c3runtime/type.js",
+		"c3runtime/instance.js",
+		"c3runtime/conditions.js",
+		"c3runtime/actions.js",
+		"c3runtime/expressions.js",
+		"c3runtime/domSide.js",
+		"lang/en-US.json",
+		"aces.json",
+		"addon.json",
+		"icon.svg",
+		"instance.js",
+		"plugin.js",
+		"type.js",
+		"screenlog.js"
+	]
+}

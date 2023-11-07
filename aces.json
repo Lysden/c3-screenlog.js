@@ -1,0 +1,31 @@
+﻿{
+	"custom": {
+		"conditions": [
+
+		],
+		"actions": [
+			{
+				"id": "init-log",
+				"scriptName": "initlog",
+				"highlight": true,
+				"params":
+				[
+					{"id": "settings", "type": "string", "initialValue": "\"\""}
+				]
+			},
+			{
+				"id": "delete-Log",
+				"scriptName": "deleteLog",
+				"highlight": true
+			},
+			{
+				"id": "clear-Log",
+				"scriptName": "clearLog",
+				"highlight": true
+			}
+		],
+		"expressions": [
+
+		]
+	}
+}
